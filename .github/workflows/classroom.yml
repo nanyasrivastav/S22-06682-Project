@@ -1,0 +1,24 @@
+name: GitHub Classroom Workflow
+
+on: 
+  push:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+  # job to run autograding
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    timeout-minutes: 5    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # run grading
+      - uses: education/autograding@v1
+        name: "** Grading and Feedback **"
+        continue-on-error: true
