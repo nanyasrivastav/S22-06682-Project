@@ -1,12 +1,14 @@
+"""Using Pandas or stdin to read JSON datafile(s)."""
+import sys
 import pandas as pd
-import sys 
+
 
 def display_head(fname, rows):
-    if fname == '-':
-        f = sys.stdin.read()
-        df = pd.read_json(f)
+    """Reads a datafile and displays its first n rows."""
+    if fname == "-":
+        f_stdin = sys.stdin.read()
+        data = pd.read_json(f_stdin)
     else:
-        df = pd.read_json(fname)
-        
-    print(df.head(rows))
+        data = pd.read_json(fname)
 
+    print(data.head(rows))
