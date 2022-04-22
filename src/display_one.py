@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-"""To display a specific dataframe."""
+"""Executable command that allows the user to input single datafile."""
 import argparse
-from read_data import display_head
+from utilities import display_head
 
 
 def main(args):  # pylint: disable=redefined-outer-name
