@@ -11,9 +11,7 @@ def main(args):  # pylint: disable=redefined-outer-name
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="To Display All Inputted Datasets"
-    )  # noqa: E501
+    parser = argparse.ArgumentParser(description="To Display All Inputted Datasets")  # noqa: E501
     parser.add_argument(
         "-n", "--num", type=int, help="# rows to display for all datasets"
     )
