@@ -29,10 +29,27 @@ def max_value(fname):
     if maxloc == "rate":
         rate_hy = data["umolH_max_rate"].max()
         high_activity_rate = data.query("umolH_max_rate == @rate_hy")
-        print(rate_hy)
-        print(high_activity_rate.iloc[:, :5])
+        print(f'Maximum production rate of H2: {rate_hy} umol/time') # units?
+        #print(high_activity_rate)
+        #print(high_activity_rate.iloc[:, :5])
+        
+        print(f'Well # : {high_activity_rate.index.tolist()}')
+        print(f'Composition of well: {high_activity_rate.columns.values[:5]}')
+        print('Concentrations of metals:')
+        for i in list(high_activity_rate.iloc[:, :2]):
+            print(high_activity_rate[i].tolist())
     else:
         value_hy = data["umolH_max"].max()
         high_activity_value = data.query("umolH_max == @value_hy")
-        print(value_hy)
-        print(high_activity_value.iloc[:, :5])
+        print(f'Maximum value of H2: {value_hy} umol') #units?
+        #print(high_activity_value)
+        #print(high_activity_value.iloc[:, :5])
+        
+        print(f'Well # : {high_activity_value.index.tolist()}')
+        print(f'Composition of well: {high_activity_value.columns.values[:5]}')
+        print('Concentrations of metals:')
+        for i in list(high_activity_value.iloc[:, :2]):
+            print(high_activity_value[i].tolist())
+    
+
+
