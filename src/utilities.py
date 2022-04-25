@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def display_head(fname, rows):
-    """Reads a datafile and displays its first n rows."""
+    """Reads datafile(s) and displays its first n rows."""
     if fname == "-":
         f_stdin = sys.stdin.read()
         data = pd.read_json(f_stdin)

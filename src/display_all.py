@@ -1,18 +1,20 @@
 #!/usr/bin/env python
-"""Executable command that allows the user to input multiple datafiles."""
+"""Command that allows the user to read
+multiple datafiles on the command line."""
 import argparse
 from utilities import display_head
 
 
 def main(args):  # pylint: disable=redefined-outer-name
-    """Displays the first n rows of multiple user-inputted dataframe(s)."""
+    """Displays dataframe(s) of the first n rows of
+    user-inputted datafiles(s)."""
     for fname in args.infile:
         display_head(fname, args.num)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Display All Inputted Datasets"
+        description="Display contents of inputted multiple datasets."
     )  # noqa: E501
     parser.add_argument(
         "-n", "--num", type=int, help="# rows to display for all datasets"

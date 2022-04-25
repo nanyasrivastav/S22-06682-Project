@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Executable command that allows the user to input whether they need
+"""Command that allows the user to input whether they need
 to extract experimental information about umolH_max_rate or umolH_max
 from the user-inputted datafile.
 """
