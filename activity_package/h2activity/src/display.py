@@ -22,7 +22,7 @@ if num_files == "S":
     NOTE: Required arguments include path to datafile and\n\
     an optional argument includes entering the number of rows to print."
     )
-elif num_files == 'M':
+elif num_files == "M":
     print(
         "\n    Please run the 'display_all.py' command\n\n\
     NOTE: Required arguments include path to all datafiles\n\
