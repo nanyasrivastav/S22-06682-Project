@@ -1,10 +1,10 @@
 black:
-	black src
+	black activity_package/h2activity/src
 
 flake8:
-	flake8 src
+	flake8 activity_package/h2activity/src
 
 pylint:
-	pylint src
+	pylint activity_package/h2activity/src
 
 all: black flake8 pylint 
