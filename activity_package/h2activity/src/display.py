@@ -7,7 +7,7 @@ the necessary commands."""
 import glob
 
 print(
-    f'\n    Datafiles in the uploaded directory include: \
+    f'\n    Datafiles in the uploaded directory include:\
     {glob.glob("./data/*.json")}'
 )
 
@@ -18,14 +18,16 @@ num_files = input(
 
 if num_files == "S":
     print(
-        "\n\n    Please run the 'display_one.py' command\n    \
-        NOTE: Required arguments include path to datafile and \
-        an optional argument includes entering the number of rows to print."
+        "\n    Please run the 'display_one.py' command\n\n\
+    NOTE: Required arguments include path to datafile and\n\
+    an optional argument includes entering the number of rows to print."
+    )
+elif num_files == 'M':
+    print(
+        "\n    Please run the 'display_all.py' command\n\n\
+    NOTE: Required arguments include path to all datafiles\n\
+    and an optional argument includes entering the number of\n\
+    rows to print for all inputted datafiles."
     )
 else:
-    print(
-        "\n\n    Please run the 'display_all.py' command\n    \
-        NOTE: Required arguments include path to all datafiles \
-        and an optional argument includes entering the number of \
-        rows to print for all inputted datafiles."
-    )
+    print("\n\n    INVALID OPTION ENTERED\n")

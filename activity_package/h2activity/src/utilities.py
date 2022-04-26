@@ -13,7 +13,7 @@ def display_head(fname, rows):
     else:
         data = pd.read_json(fname)
 
-    print(data.head(rows))
+    print(f'\n{data.head(rows)}')
 
 
 def max_value(fname):
@@ -24,29 +24,31 @@ def max_value(fname):
     else:
         data = pd.read_json(fname)
 
-    maxloc = input("Enter rate/ value: ")
+    maxloc = input("\n    Enter rate/ value: ")
 
     if maxloc == "rate":
         rate_hy = data["umolH_max_rate"].max()
         high_activity_rate = data.query("umolH_max_rate == @rate_hy")
-        print(f"Maximum production rate of H2: {rate_hy} umol/time")  # units?
+        print(f"\n    Maximum production rate of H2: {rate_hy} umol/time")  # units?
         # print(high_activity_rate)
         # print(high_activity_rate.iloc[:, :5])
 
-        print(f"Well # : {high_activity_rate.index.tolist()}")
-        print(f"Composition of well: {high_activity_rate.columns.values[:5]}")
-        print("Concentrations of metals:")
+        print(f"    Well # : {high_activity_rate.index.tolist()}")
+        print(f"    Composition of well: {high_activity_rate.columns.values[:5]}")
+        print("    Concentration of metals:")
         for i in list(high_activity_rate.iloc[:, :2]):
-            print(high_activity_rate[i].tolist())
-    else:
+            print(f'    {high_activity_rate[i].tolist()}')
+    elif maxloc =="value":
         value_hy = data["umolH_max"].max()
         high_activity_value = data.query("umolH_max == @value_hy")
-        print(f"Maximum value of H2: {value_hy} umol")  # units?
+        print(f"\n    Maximum value of H2: {value_hy} umol")  # units?
         # print(high_activity_value)
         # print(high_activity_value.iloc[:, :5])
 
-        print(f"Well # : {high_activity_value.index.tolist()}")
-        print(f"Composition of well: {high_activity_value.columns.values[:5]}")
-        print("Concentrations of metals:")
+        print(f"    Well # : {high_activity_value.index.tolist()}")
+        print(f"    Composition of well: {high_activity_value.columns.values[:5]}")
+        print("    Concentration of metals:")
         for i in list(high_activity_value.iloc[:, :2]):
-            print(high_activity_value[i].tolist())
+            print(f'    {high_activity_value[i].tolist()}')
+    else:
+        print("\n\n    INVALID OPTION ENTERED\n")
