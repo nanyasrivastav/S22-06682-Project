@@ -20,6 +20,7 @@ Your project should:
     notebook, including data if it is needed.
 -   [ ] Should pass black, flake8 and pylint (ideally you would setup pre-commit
     hooks to help ensure this)
+    
 -   [ ] Should have some tests that are run in a GitHUB action, and your project
     should pass them.
 
