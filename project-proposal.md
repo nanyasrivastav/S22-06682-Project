@@ -9,8 +9,8 @@ hence, this project aims at developing a workflow on Shell that will allow the u
 and analyze results obtained from their high throughput well plate experiments. 
 - The initial development will focus on data obtained from the following experiment: “Photo Driven Hydrogen Evolution with Heterogeneous Metal Catalysts”.
 For this experiment, the summarized report will contain information about which bimetallic composition/ well number 
-gives the highest activity of H2 from the user-inputted experiment(s)/ dataset(s) 
-Note: In the datasets, activity of H2 is reported either as the maximum production rate of H2 or maximum value (concentration) of H2 measured over time.
+gives the highest H2 activity from user-inputted experiment(s)/ dataset(s) 
+Note: In the datasets, H2 activity is reported either as the maximum production rate of H2 or maximum value (concentration) of H2 measured over time.
 
 Overview:
 - The user will be required to interact with Shell via a set of commands to perform the following tasks: 
@@ -22,17 +22,17 @@ display the first 'n' rows of the JSON data file (similar to how a dataframe is 
 4. run a command to display a report of simple statistics of the dataset(s)
 
 - The summarized report in Task 3 would include the following information:
-1. Based on the user's input, report high H2 activity as either the (a) maximum "Max value of H2" measured over time (umolH_max) or 
-(b) maximum "Max production rate of H2" over time (umolH_max_rate) 
+1. Based on the user's input, report high H2 activity as either the (a) maximum "Maximum value of H2 measured over time" (umolH_max) or 
+(b) maximum "Maximum production rate of H2 measured over time" (umolH_max_rate) 
 2. Report the well number/ well plate experiment that gives the highest H2 activity
 3. Report the corresponding bimetallic composition and their respective concentrations 
 
 - Workflow Ideas for the Project Work:
-1. Appropriate LICENSE files would be included along with a setup.py file to install the package containing command-line utilities. 
-2. Documentation describing the Shell workflow will be provided in the README.md file along with metadata information.
-3. Python scripts will be written to perform the tasks mentioned in the previous section and will be made executable so that the user can directly run them as commands from the working directory. 
-4. Test files that run on pytest and workflow for GitHub actions will be written to make sure that the python functions work well and raise an error if it doesn’t.
-5. Quality control using commands such as Black, Flake8 and Pylint will be automated on the package files using pre-commit hooks.
+1. Appropriate LICENSE will be included along with a setup.py file to install the package containing command-line utilities. 
+2. Documentation describing the workflow on Shell will be provided in the README.md file along with metadata information.
+3. Python scripts will be written to perform the commands mentioned in the previous section and will be made executable so that the user can directly run them from the working directory. 
+4. pytest test files and GitHub actions workflows will be written to make sure that the package functions work as they are supposed to or raise an error if they do not.
+5. Quality control using black, flake8 and pylint formatting will be automated on the package files using pre-commit hooks.
 
 Timeline: 
 - 4/18 - start writing python scripts
