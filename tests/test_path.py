@@ -3,7 +3,7 @@ def test_data():
     assert os.path.exists('./data')
 
 def test_license():
-    assert os.path.exists('./h2activity_package/LICENSE.md')
+    assert os.path.exists('./h2activity_package/LICENSE')
 
 def test_readme():
     assert os.path.exists('./h2activity_package/README.md')
