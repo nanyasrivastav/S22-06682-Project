@@ -25,3 +25,10 @@ jobs:
       - run: |
           pip install pylint
           make pylint
+
+  run_pytest_job:
+    runs-on: ubuntu-latest
+    steps:      
+      - uses: actions/checkout@v3
+      - run: |
+          pytest
