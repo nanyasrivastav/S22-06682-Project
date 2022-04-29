@@ -21,13 +21,13 @@ display the first 'n' rows of the JSON data file (similar to how a dataframe is 
 3. run a command to display the summarized report(s) as stdout or download the output onto their working directory as a .txt file.
 4. run a command to display a report of simple statistics of the dataset(s)
 
-The summarized report in Task 3 would include the following information:
+- The summarized report in Task 3 would include the following information:
 1. Based on the user's input, report high H2 activity as either the (a) maximum "Max value of H2" measured over time (umolH_max) or 
 (b) maximum "Max production rate of H2" over time (umolH_max_rate) 
 2. Report the well number/ well plate experiment that gives the highest H2 activity
 3. Report the corresponding bimetallic composition and their respective concentrations 
 
-Workflow Ideas for the Project Work:
+- Workflow Ideas for the Project Work:
 1. Appropriate LICENSE files would be included along with a setup.py file to install the package containing command-line utilities. 
 2. Documentation describing the Shell workflow will be provided in the README.md file along with metadata information.
 3. Python scripts will be written to perform the tasks mentioned in the previous section and will be made executable so that the user can directly run them as commands from the working directory. 
