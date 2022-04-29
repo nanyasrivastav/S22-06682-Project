@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-"""Command that displays the contents of single or
-multiple datafiles on the command line."""
+"""Command that displays simple statistics of the dataset(s).
+
+Required arguments include path to datafile(s)."""
 import argparse
 from utilities import stats
 

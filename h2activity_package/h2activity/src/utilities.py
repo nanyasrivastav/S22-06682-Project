@@ -1,5 +1,8 @@
-"""Providing functions to read data, display its contents,
-and output the maximum umolH_max_rate or umol_H based on user input.
+"""A utilities module providing functions to
+(a) read datafile(s) and display its contents,
+(b) output a summarized report of Well with highest H2 activity
+produced by the experiment(s)
+(c) output a simple statistics of the dataframe(s).
 """
 import sys
 import pandas as pd
@@ -18,7 +21,7 @@ def display_head(fname, rows):
 
 def max_h2(fname, option):
     """Reads datafile(s) and displays the maximum H2 rates/ values,
-    the correspoding well number, bimetallic composition and its respective
+    the corresponding Well, bimetallic composition and its respective
     concentrations."""
     if fname == "-":
         f_stdin = sys.stdin.read()
@@ -55,7 +58,7 @@ def max_h2(fname, option):
 
 
 def stats(fname):
-    """Displays statistical data of the dataframe(s)."""
+    """Displays simple statistics of the dataframe(s)."""
     if fname == "-":
         f_stdin = sys.stdin.read()
         data = pd.read_json(f_stdin)

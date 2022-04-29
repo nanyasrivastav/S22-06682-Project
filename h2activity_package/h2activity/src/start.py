@@ -8,7 +8,8 @@ The command also prompts to user to input whether they would
 like to see an example of how the commands run.
 
 The purpose of this command is to direct the user
-to execute a command that will display the contents datafiles."""
+to start a workflow on Shell and run commands included in the
+package."""
 import glob
 
 print(
@@ -17,21 +18,26 @@ print(
 )
 
 num_files = input(
-    "\n    The contents of how many files do you want displayed?\n\
-    Enter 'S' for single file and 'M' for multiple files: "
+    "\n    How many files/ experiments do you want to analyze?\n\
+    Enter 'S' for single and 'M' for multiple: "
 )
 
 if num_files == "S":
-    print("\n    Please run the 'display.py' command\n")
+    print(
+        "\n    Run 'display.py' to display first n rows of datafile\n\
+    Run 'high_activity.py' to find Well with highest H2 activity in experiment\n\
+    Run 'stats.py' to display simple statistics of datafile"
+    )
 
     ans = input(
-        "\n    Do you want to see an example of \
-    how the command works? (y/n) "
+        "\n    Do you want to see an example of how these commands work? (y/n) "
     )
     if ans == "y":
         print(
-            "\n    Type the following command on the command line:\n\n\
-        display.py ./path/to/file -r 5\n"
+            "\n    Type the following commands on the command line:\n\n\
+        display.py ./path/to/file -r 5 \n\
+        high_activity.py ./path/to/file -o R \n\
+        stats.py ./path/to/file\n"
         )
     elif ans == "n":
         print("\n    Please continue.")
@@ -39,17 +45,19 @@ if num_files == "S":
         print("\n    INVALID OPTION ENTERED!\n")
 
 elif num_files == "M":
-    print("\n    Please run the 'display.py' command\n")
-
-    ans = input(
-        "\n    Do you want to see an example of \
-    how the command works? (y/n) "
+    print(
+        "\n    Run 'display.py' to display first n rows of the datafiles\n\
+    Run 'high_activity.py' to find Well with highest H2 activity in experiments\n\
+    Run 'stats.py' to display simple statistics of datafiles"
     )
+
+    ans = input("\n    Do you want to see an example of how commands work? (y/n) ")
     if ans == "y":
         print(
             "\n    Type the following command on the command line:\n\n\
-        display.py ./path/to/file_one.json ./path/to/file_two.json \
-        ./path/to/file_three.json -r 5\n"
+        display.py ./path/to/file_one.json ./path/to/file_two.json -r 3 \n\
+        high_activity.py ./path/to/file_one.json ./path/to/file_two.json -o V \n\
+        stats.py ./path/to/file_one.json ./path/to/file_two.json\n"
         )
     elif ans == "n":
         print("\n    Please continue.")

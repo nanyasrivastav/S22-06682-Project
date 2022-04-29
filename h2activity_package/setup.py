@@ -7,7 +7,7 @@ setup(name='h2activity',
       maintainer_email='ananyasr@andrew.cmu.edu',
       license='GPL',
       packages=['h2activity'],
-      scripts=['h2activity/src/start.py', 'h2activity/src/display.py', 'h2activity/src/high_activity.py', 'h2activity/src/stat.py', 'h2activity/src/utilities.py'],
+      scripts=['h2activity/src/start.py', 'h2activity/src/display.py', 'h2activity/src/high_activity.py', 'h2activity/src/stats.py', 'h2activity/src/utilities.py'],
       include_package_data=True,
       long_description='''\
 Summary of High Throughput Experiment Dataset(s) 

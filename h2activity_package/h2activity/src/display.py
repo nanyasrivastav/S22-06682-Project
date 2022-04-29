@@ -1,20 +1,21 @@
 #!/usr/bin/env python
-"""Command that displays the contents of single or
-multiple datafiles on the command line."""
+"""Command that displays the first n rows of datafile(s).
+
+Required arguments include path to datafile(s).
+Optional argument include number of rows to display."""
 import argparse
 from utilities import display_head
 
 
 def main(args):  # pylint: disable=redefined-outer-name
-    """Displays dataframe(s) of the first n rows of
-    user-inputted dataframe(s)."""
+    """Displays first n rows of dataframe(s)."""
     for fname in args.infile:
         display_head(fname, args.rows)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Display contents of inputted datafile(s) as dataframes."
+        description="Displays first n rows of user-inputted datafile(s)."
     )
     parser.add_argument(
         "infile", type=str, nargs="*", default="-", help="Input datafile path(s)"
