@@ -6,7 +6,6 @@ h2activity/display.py
 h2activity/high_activity.py
 h2activity/start.py
 h2activity/stats.py
-h2activity/utilities.py
 h2activity.egg-info/PKG-INFO
 h2activity.egg-info/SOURCES.txt
 h2activity.egg-info/dependency_links.txt

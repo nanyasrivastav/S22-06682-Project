@@ -14,7 +14,6 @@ setup(
         "h2activity/display.py",
         "h2activity/high_activity.py",
         "h2activity/stats.py",
-        "h2activity/utilities.py",
     ],
     include_package_data=True,
     long_description="""\
