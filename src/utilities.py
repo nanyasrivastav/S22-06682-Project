@@ -5,7 +5,7 @@ produced by the experiment(s)
 (c) output a simple statistics of the dataframe(s).
 """
 import sys
-import pandas as pd
+import pandas as pd # pylint: disable=import-error
 
 
 def display_head(fname, rows):
