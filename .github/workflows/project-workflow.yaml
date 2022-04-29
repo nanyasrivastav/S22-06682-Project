@@ -41,4 +41,5 @@ jobs:
       - run: |
           pip install pytest
           cd src
-          pytest tests
+          pytest tests/test_path.py
+          pytest tests/test_fail.py
