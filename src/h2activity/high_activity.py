@@ -11,6 +11,7 @@ Optional argument include an option that chooses whether they would like
 to extract data based on H2 rate (R) or H2 value (V).
 """
 import argparse
+
 from utilities import max_h2
 
 

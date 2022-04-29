@@ -4,6 +4,7 @@
 Required arguments include path to datafile(s).
 Optional argument include number of rows to display."""
 import argparse
+
 from utilities import display_head
 
 

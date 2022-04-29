@@ -2,6 +2,11 @@ MANIFEST.in
 README.md
 setup.py
 h2activity/__init__.py
+h2activity/display.py
+h2activity/high_activity.py
+h2activity/start.py
+h2activity/stats.py
+h2activity/utilities.py
 h2activity.egg-info/PKG-INFO
 h2activity.egg-info/SOURCES.txt
 h2activity.egg-info/dependency_links.txt
@@ -9,8 +14,3 @@ h2activity.egg-info/top_level.txt
 h2activity/data_examples/AucolCurow.json
 h2activity/data_examples/AucolSnrow.json
 h2activity/data_examples/PdcolPbrow.json
-h2activity/src/display.py
-h2activity/src/high_activity.py
-h2activity/src/start.py
-h2activity/src/stats.py
-h2activity/src/utilities.py
