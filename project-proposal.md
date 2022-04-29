@@ -27,17 +27,17 @@ The summarized report in Task 4 would include the following information:
 3. Compare the above-extracted data and tell the user which experiment or bimetallic catalyst composition has the highest activity for H2 production !!!!!!
 
 Workflow Ideas:
-1. Appropriate LICENSE.md files would be included along with a setup.py file to install the package containing command-line utilities. -- DONE
-2. Documentation describing the Shell workflow will be provided in the README.md file along with metadata information. -- AFTER WEDNESDAY
-3. A requirements.txt file with common python libraries such as pandas (to read JSON files and perform analysis on the data frame) will be included. -- DONT KNOW
-4. Python scripts will be written to perform the tasks mentioned in the previous section and will be made executable so that the user can directly run them as commands. -- DONE
-5. Test files for pytest and GitHub actions will be written to make sure that the python functions work well and raise an error if it doesn’t. -- AFTER WEDNESDAY
+1. Appropriate LICENSE.md files would be included along with a setup.py file to install the package containing command-line utilities. 
+2. Documentation describing the Shell workflow will be provided in the README.md file along with metadata information. !!!!!!!!!!!!1
+3. A requirements.txt file with common python libraries such as pandas (to read JSON files and perform analysis on the data frame) will be included. !!!!!!!!!!!
+4. Python scripts will be written to perform the tasks mentioned in the previous section and will be made executable so that the user can directly run them as commands. 
+5. Test files for pytest and GitHub actions will be written to make sure that the python functions work well and raise an error if it doesn’t. !!!!!!!!!1
 It could also be used to ensure that the user inputs only JSON files, or raises errors if the JSON file does not contain columns in the same format as the package scripts require it to be in.
-6. Quality control will be automated on the package (pre-commit hooks) to produce a high-quality package. -- DONE
+6. Quality control will be automated on the package (pre-commit hooks) to produce a high-quality package. 
 
 Timeline: 
-4/18 - start writing python scripts
-4/20 - in-class presentation
-4/25 - pytest files/ get the workflow ready 
-4/27 - in-class presentation/ add documentation
-4/29 - project due
+- 4/18 - start writing python scripts
+- 4/20 - in-class presentation
+- 4/25 - pytest files/ get the workflow ready 
+- 4/27 - in-class presentation/ add documentation
+- 4/29 - project due
