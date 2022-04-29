@@ -12,5 +12,5 @@ h2activity/data_examples/PdcolPbrow.json
 h2activity/src/display.py
 h2activity/src/high_activity.py
 h2activity/src/start.py
-h2activity/src/stat.py
+h2activity/src/stats.py
 h2activity/src/utilities.py

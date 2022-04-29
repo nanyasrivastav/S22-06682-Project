@@ -18,7 +18,7 @@ their high throughput experiments.
 3. run a command to display the first 'n' rows of the JSON data file (similar to how a data frame is displayed on Deepnote using Pandas)
 – the purpose of this command is to allow the user to take a look at what their dataset contains, on Shell, instead of writing code to read JSON files on ipynb notebooks.
 4. run a command to either display the summarized report as stdout or download the report onto their working directory as a .txt file.
-– this command could have options to either look at the simple report as stdout or download it as pdf or txt file onto the desktop/ Deepnote folder  !!!!!!!!!!
+– this command could have options to either look at the simple report as stdout or download it as pdf or txt file onto the desktop/ Deepnote folder
 
 The summarized report in Task 4 would include the following information:
 1. Input options from the user to either (a) report the maximum "Max value of H2" measured over time (umolH_max) or 
@@ -31,7 +31,7 @@ Workflow Ideas:
 2. Documentation describing the Shell workflow will be provided in the README.md file along with metadata information. !!!!!!!!!!!!1
 3. A requirements.txt file with common python libraries such as pandas (to read JSON files and perform analysis on the data frame) will be included. !!!!!!!!!!!
 4. Python scripts will be written to perform the tasks mentioned in the previous section and will be made executable so that the user can directly run them as commands. 
-5. Test files for pytest and GitHub actions will be written to make sure that the python functions work well and raise an error if it doesn’t. !!!!!!!!!1
+5. Test files for pytest and GitHub actions will be written to make sure that the python functions work well and raise an error if it doesn’t.
 It could also be used to ensure that the user inputs only JSON files, or raises errors if the JSON file does not contain columns in the same format as the package scripts require it to be in.
 6. Quality control will be automated on the package (pre-commit hooks) to produce a high-quality package. 
 

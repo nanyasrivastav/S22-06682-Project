@@ -10,3 +10,6 @@ def test_readme():
 
 def test_src():
     assert os.path.exists('./h2activity_package/h2activity/src')
+
+def test_data_examples():
+    assert os.path.exists('./h2activity_package/h2activity/data_examples')

@@ -34,10 +34,7 @@ def max_h2(fname, option):
         high_activity_rate = data.query("umolH_max_rate == @rate_hy")
         print(f"\n   Maximum production rate of H2: {rate_hy} umol/time")
         print(f"   Well # : {high_activity_rate.index.tolist()}")
-        print(
-            f"   Bimetallic Composition:\
-        {high_activity_rate.columns.values[:2]}"
-        )
+        print(f"   Bimetallic Composition: {high_activity_rate.columns.values[:2]}")
         print("   Concentration of metals:")
         for i in list(high_activity_rate.iloc[:, :2]):
             conc = high_activity_rate[i].tolist()
@@ -47,10 +44,7 @@ def max_h2(fname, option):
         high_activity_value = data.query("umolH_max == @value_hy")
         print(f"\n   Maximum value of H2: {value_hy} umol")
         print(f"   Well # : {high_activity_value.index.tolist()}")
-        print(
-            f"   Bimetallic Composition:\
-        {high_activity_value.columns.values[:2]}"
-        )
+        print(f"   Bimetallic Composition: {high_activity_value.columns.values[:2]}")
         print("   Concentration of metals:")
         for i in list(high_activity_value.iloc[:, :2]):
             conc = high_activity_value[i].tolist()
