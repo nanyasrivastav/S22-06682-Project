@@ -40,6 +40,5 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           pip install pytest
-          cd project-nanyasrivastav
           pytest tests/test_path.py
-          pytest tests/test_fail.py
+          pytest project-nanyasrivastav/tests/test_fail.py
