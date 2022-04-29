@@ -41,3 +41,4 @@ jobs:
       - run: |
           pip install pytest
           pytest tests/test_path.py
+          pytest tests/test_fail.py
