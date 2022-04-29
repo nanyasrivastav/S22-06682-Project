@@ -2,6 +2,13 @@ name: Project Workflow
 on: push
 
 jobs:
+  run_pip_installable_job:
+    runs-on: ubuntu-latest
+    steps:      
+      - uses: actions/checkout@v3
+      - run: |
+          pip install -e h2activity_package
+
   run_black_job:
     runs-on: ubuntu-latest
     steps:      
@@ -32,7 +39,5 @@ jobs:
     steps:      
       - uses: actions/checkout@v3
       - run: |
-          pip install -e h2activity_package
           pip install pytest
           pytest tests/test_path.py
-          pytest tests/test_fail.py
