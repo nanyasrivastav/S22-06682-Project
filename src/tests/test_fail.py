@@ -1,5 +1,5 @@
 """Tests that pass if the function fails to return value."""
-import pytest # pylint: disable=import-error
+import pytest  # pylint: disable=import-error
 from utilities import display_head, max_h2, stats
 
 
