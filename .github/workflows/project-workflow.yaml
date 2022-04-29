@@ -39,8 +39,7 @@ jobs:
     steps:      
       - uses: actions/checkout@v3
       - run: |
-          pip install pytest
-          import pandas 
+          pip install pytest 
           cd src
           pytest tests/test_path.py
           pytest tests/test_fail.py
