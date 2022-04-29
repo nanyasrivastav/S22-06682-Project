@@ -1,5 +1,3 @@
-
-
 # Assignments
 
 -   [ ] Put your project proposal in a document called project-proposal.md. You
@@ -30,4 +28,3 @@ project anything you want inside of that.
 I am more interested in seeing a good, well-documented solution to a single
 problem than lots of partial, undocumented solutions to many problems. You can
 always add things to it after things are working right.
-

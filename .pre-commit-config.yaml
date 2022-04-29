@@ -3,16 +3,16 @@ repos:
     rev: 22.3.0
     hooks:
     - id: black
-      entry: black src
+      entry: black h2activity_package
 
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 4.0.1
     hooks:
     - id: flake8
-      entry: flake8 src
+      entry: flake8 h2activity_package
 
 - repo: https://github.com/pycqa/pylint
     rev: 2.6.0
     hooks:
     - id: pylint
-      entry: pylint src
+      entry: pylint h2activity_package
