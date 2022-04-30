@@ -1,4 +1,4 @@
-# H2 Activity Package 
+# ⚗️ H2 Activity Package 
 
 This readme file contains detailed information about the contents of the package and the different command line utilities it offers. 
 A step-by-step tutorial, with examples of how to run a simple workflow on the command line, has also been included with this file. 
@@ -12,7 +12,7 @@ can be obtained with a single command line. The user can also download and store
 this option could be useful for future analysis or comparison of results. Along with this, the package provides command line utilties to display the contents of the dataframes 
 and some simple statistical results using the pandas library.
 
-## Package Structure
+## 🌳 Package Structure
 
 The following structure is a list of the main directories and files present in this package. 
 It can be obtained by running the following commands on Shell. 
@@ -52,7 +52,7 @@ Output of the tree command:
 - The h2activity/ directory is the name of the package and contains several .py scripts that are executable commands.
 - The data_examples/ directory contains example JSON datafile that are inlcuded with the package for the user to practice on.
 
-## Metadata
+## 📋 Metadata
 
 The initial development of this package deals with datasets that contain data from 3 experiments. 
 The experiments are 96 well plate experiments, where each well contains a unique combination (or concentrations) of input components. 
@@ -71,7 +71,7 @@ The maximum value of umolH_max and umolH_max_rate define maximum H2 activity and
 corresponding bimetallic properties.
 umolh and time are the time series data.
 
-## Workflow tutorial along with brief explanation of the commands
+## ⏭ Workflow tutorial along with brief explanation of the commands
 Step 1: pip install the package onto the local repository or the working directory
 
     pip install src/
