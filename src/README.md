@@ -18,8 +18,12 @@ The following structure is a list of the main directories and files present in t
 It can be obtained by running the following commands on Shell. 
 
     sudo apt-get update
+
     sugo apt-get install tree
+    
     tree -F src
+
+Output of the tree command: 
 
     src
     ├── h2activity/
