@@ -21,25 +21,25 @@ It can be obtained by running the following commands on Shell.
     sugo apt-get install tree
     tree -F src
 
-src
-├── h2activity/
-│   ├── data_examples/
-│   │   ├── AucolCurow.json
-│   │   ├── AucolSnrow.json
-│   │   └── PdcolPbrow.json
-│   ├── display.py
-│   ├── high_activity.py
-│   ├── __init__.py
-│   ├── start.py
-│   └── stats.py
-├── LICENSE
-├── MANIFEST.in
-├── README.md
-├── setup.py
-├── tests/
-│   ├── test_fail.py
-│   └── test_path.py
-└── utilities.py
+    src
+    ├── h2activity/
+    │   ├── data_examples/
+    │   │   ├── AucolCurow.json
+    │   │   ├── AucolSnrow.json
+    │   │   └── PdcolPbrow.json
+    │   ├── display.py
+    │   ├── high_activity.py
+    │   ├── __init__.py
+    │   ├── start.py
+    │   └── stats.py
+    ├── LICENSE
+    ├── MANIFEST.in
+    ├── README.md
+    ├── setup.py
+    ├── tests/
+    │   ├── test_fail.py
+    │   └── test_path.py
+    └── utilities.py
 
 - The setup.py file indicated that the module/ package is pip installable.
 - The LICENSE file contains details of the GNU General Public License terms and conditions. 
@@ -83,16 +83,16 @@ Note: This step can be skipped if needed. It is just provided as a starting poin
 Step 3: Output the first "n" rows of the dataset(s) on Shell. This command uses the pandas library to read and display the contents of the JSON datafiles.
 It can be executed in the following ways to give the user some flexibility on the command line.
 
-- A simple command that takes the path of single datafile as its argument. The output of this command is the contents of the dataframe (all rows and columns). 
+A simple command that takes the path of single datafile as its argument. The output of this command is the contents of the dataframe (all rows and columns). 
 
     display.py ./data/AucolCurow.json 
 
-- If the output of the entire dataframe is not required at any stage, add the optional argument to display the first "n" rows of the dataset. 
+If the output of the entire dataframe is not required at any stage, add the optional argument to display the first "n" rows of the dataset. 
 The example below would output the first 5 rows of the dataframe.
 
     display.py ./data/AucolCurow.json -r 5
 
-- To output the contents of several dataframes, add paths to several datafiles as space separated arguments and/ or add the optional argument to display the first "n" rows of 
+To output the contents of several dataframes, add paths to several datafiles as space separated arguments and/ or add the optional argument to display the first "n" rows of 
 all of the user-inputted datasets.
 
     display.py ./data/AucolCurow.json ./data/AucolSnrow.json 
@@ -106,19 +106,19 @@ Step 4: To get a summarized report of the dataset(s), use this command and add t
 maximum rate of H2 production (R) or the maximum value of H2 (V) measured over time. Based on the user's choice, the well plate experiment or well number with the highest H2 activity 
 will be reported along with information of the corresponding bimetallic composition and concentration.
 
-- To find the well plate experiment/ well number with highest H2 activity in the AucolCurow.json datafile based on maximum rate of H2 production.
+To find the well plate experiment/ well number with highest H2 activity in the AucolCurow.json datafile based on maximum rate of H2 production.
 
     high_activity.py ./data/AucolCurow.json -o R
 
-- To find the well plate experiment/ well number with highest H2 activity in the AucolSnrow.json datafile based on maximum value of H2.
+To find the well plate experiment/ well number with highest H2 activity in the AucolSnrow.json datafile based on maximum value of H2.
 
     high_activity.py ./data/AucolSnrow.json -o V
 
-- To download the results of the analysis onto the working directory as a text file. 
+To download the results of the analysis onto the working directory as a text file. 
 
     high_activity.py ./data/AucolCurow.json -o R > report.txt
 
-- To find well plate experiments/ well numbers with highest H2 activity for several datafiles. This could be useful for comparison of results between 2 or more high throughput experiments.
+To find well plate experiments/ well numbers with highest H2 activity for several datafiles. This could be useful for comparison of results between 2 or more high throughput experiments.
 
     high_activity.py ./data/AucolCurow.json ./data/AucolSnrow.json -o R 
 
