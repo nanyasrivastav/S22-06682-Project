@@ -4,7 +4,7 @@
 Required arguments include path to datafile(s)."""
 import argparse
 
-from src.utilities import stats
+from src.utilities import stats  # pylint: disable=import-error
 
 
 def main(args):  # pylint: disable=redefined-outer-name
