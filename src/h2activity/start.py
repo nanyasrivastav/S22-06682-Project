@@ -8,7 +8,7 @@ The command also prompts the user to input whether they would
 like to see an example of how the commands run.
 
 The purpose of this command is to act as a starting point and
-direct the user to start a workflow on Shell and run commands 
+direct the user to start a workflow on Shell and run commands
 included with the package."""
 import glob
 

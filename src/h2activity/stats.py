@@ -8,9 +8,9 @@ from src.utilities import stats  # pylint: disable=import-error
 
 
 def main(args):  # pylint: disable=redefined-outer-name
-    """Calls a function that displays simple statistics 
+    """Calls a function that displays simple statistics
     using pandas df.describe().
-    
+
     file name passed as required arguments."""
     for fname in args.infile:
         stats(fname)

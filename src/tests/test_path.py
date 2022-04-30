@@ -1,4 +1,4 @@
-"""Tests that pass on GitHub actions or pytest 
+"""Tests that pass on GitHub actions or pytest
 iff project contains necessary files in same path."""
 import os
 
