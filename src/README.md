@@ -72,11 +72,11 @@ corresponding bimetallic properties.
 umolh and time are the time series data.
 
 ## ⏭ Workflow tutorial along with brief explanation of the commands
-Step 1: pip install the package onto the local repository or the working directory
+**Step 1:** pip install the package onto the local repository or the working directory
 
     pip install src/
 
-Step 2: Once the package has been setup; start the workflow by entering the following command on the working directory. The purpose of this command is to allow the user to explore the different 
+**Step 2:** Once the package has been setup; start the workflow by entering the following command on the working directory. The purpose of this command is to allow the user to explore the different 
 command line utilities inlcuded with the package. It is an interactive command line utility that takes the user's choices into consideration and outputs directions to help the user navigate 
 through the workflow.
 
@@ -84,7 +84,7 @@ through the workflow.
 
 Note: This step can be skipped if needed. It is just provided as a starting point.
 
-Step 3: Output the first "n" rows of the dataset(s) on Shell. This command uses the pandas library to read and display the contents of the JSON datafiles.
+**Step 3:** Output the first "n" rows of the dataset(s) on Shell. This command uses the pandas library to read and display the contents of the JSON datafiles.
 It can be executed in the following ways to give the user some flexibility on the command line.
 
 A simple command that takes the path of single datafile as its argument. The output of this command is the contents of the dataframe (all rows and columns). 
@@ -106,7 +106,7 @@ all of the user-inputted datasets.
 Note: This version of the package will display the same number of rows for all datafiles. Later development can focus on providing arguments that take in different number of rows to display for
 different dataframes.
 
-Step 4: To get a summarized report of the dataset(s), use this command and add the path(s) to the datafile(s) along with a required argument that takes the option to compute either the 
+**Step 4:** To get a summarized report of the dataset(s), use this command and add the path(s) to the datafile(s) along with a required argument that takes the option to compute either the 
 maximum rate of H2 production (R) or the maximum value of H2 (V) measured over time. Based on the user's choice, the well plate experiment or well number with the highest H2 activity 
 will be reported along with information of the corresponding bimetallic composition and concentration.
 
@@ -126,7 +126,7 @@ To find well plate experiments/ well numbers with highest H2 activity for severa
 
     high_activity.py ./data/AucolCurow.json ./data/AucolSnrow.json -o R 
 
-Step 5: To get simple statistics of the dataframes(s) as stdout report(s) or downloaded as a text file. This command uses the df.describe() function in pandas. 
+**Step 5:** To get simple statistics of the dataframes(s) as stdout report(s) or downloaded as a text file. This command uses the df.describe() function in pandas. 
 Hence, the following information will be outputted: count, mean, min, max, std deviation etc. 
 
     stats.py ./data/AucolCurow.json
