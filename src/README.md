@@ -19,7 +19,7 @@ It can be obtained by running the following commands on Shell.
 
     sudo apt-get update
 
-    sugo apt-get install tree
+    sudo apt-get install tree
     
     tree -F src
 
