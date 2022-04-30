@@ -5,7 +5,7 @@ Required arguments include path to datafile(s).
 Optional argument include number of rows to display."""
 import argparse
 
-from utilities import display_head
+from src.utilities import display_head
 
 
 def main(args):  # pylint: disable=redefined-outer-name
