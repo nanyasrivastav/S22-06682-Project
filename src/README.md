@@ -45,12 +45,12 @@ Output of the tree command:
     │   └── test_path.py
     └── utilities.py
 
-- The setup.py file indicated that the module/ package is pip installable.
-- The LICENSE file contains details of the GNU General Public License terms and conditions. 
-- The tests contains test files that run on GitHub Actions and ensure the proper functioning of the package.
-- The utilities.py module contains definition of functions imported by the package commands.
-- The h2activity/ directory is the name of the package and contains several .py scripts that are executable commands.
-- The data_examples/ directory contains example JSON datafile that are inlcuded with the package for the user to practice on.
+- The `setup.py` file indicates that the module/ package is pip installable.
+- The `LICENSE` file contains details of the GNU General Public License terms and conditions. 
+- The `tests/` directory contains test files that run on GitHub Actions and ensure the proper functioning of the package.
+- The `utilities.py` module contains definition of functions imported by the package commands.
+- The `h2activity/` directory is the name of the package and contains several .py scripts that are executable commands.
+- The `data_examples/` directory contains example JSON datafiles that are included with the package for the user to practice on.
 
 ## 📋 Metadata
 
@@ -59,7 +59,7 @@ The experiments are 96 well plate experiments, where each well contains a unique
 The output metric of the experiment is hydrogen evolution data in umolH. 
 
 Data:
-The data is in JSON file format and that package requires user-inputted datafiles to be in the same format. 
+The data is in JSON file format and the package requires user-inputted datafiles to be in the same format. 
 The dataframe has 96 rows corresponding to the 96 wells. The first 5 columns are inputs in the wells, and the last 4 columns have the output information. 
 
 Inputs:

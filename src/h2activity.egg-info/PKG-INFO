@@ -1,13 +1,13 @@
 Metadata-Version: 1.2
 Name: h2activity
-Version: 0.0.1
-Summary: Report summary of dataset(s)
+Version: 1.0
+Summary: Display and report summary of dataset(s)
 Home-page: UNKNOWN
 Maintainer: Ananya Srivastava
 Maintainer-email: ananyasr@andrew.cmu.edu
 License: GPL
 Description: Summary of High Throughput Experiment Dataset(s)
         ==============
-        Command line utilities to read datasets and
-        output its contents and summarized results.
+        Command line utilities to read and display dataset(s) and
+        output its summarized results.
 Platform: UNKNOWN
