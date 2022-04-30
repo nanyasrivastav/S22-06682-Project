@@ -8,9 +8,8 @@ Motivation:
 hence, this project aims at developing a workflow on Shell that will allow the user to quickly read the contents of their dataset(s)
 and analyze results obtained from their high throughput well plate experiments. 
 - The initial development will focus on data obtained from the following experiment: “Photo Driven Hydrogen Evolution with Heterogeneous Metal Catalysts”.
-For this experiment, the summarized report will contain information about which bimetallic composition/ well number 
-gives the highest H2 activity from user-inputted experiment(s)/ dataset(s).
-
+For this experiment, the summarized report will contain information about which well plate experiment/ well number 
+gives the highest H2 activity from user-inputted experiment(s)/ dataset(s) and then report the corresponding bimetallic properties. 
 Note: In the datasets, H2 activity is reported either as the maximum production rate of H2 or maximum value (concentration) of H2 measured over time.
 
 Overview:

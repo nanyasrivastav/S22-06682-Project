@@ -1,15 +1,15 @@
 #!/usr/bin/env python
-"""This command first displays the path of all the .json datafiles
+"""Command that first displays the path of all the .json datafiles
 (uploaded by the user) in the "data" directory and then prompts the user
 to input whether they want the contents of a single datafile or
 multiple datafiles displayed on Shell.
 
-The command also prompts to user to input whether they would
+The command also prompts the user to input whether they would
 like to see an example of how the commands run.
 
-The purpose of this command is to direct the user
-to start a workflow on Shell and run commands included in the
-package."""
+The purpose of this command is to act as a starting point and
+direct the user to start a workflow on Shell and run commands 
+included with the package."""
 import glob
 
 print(

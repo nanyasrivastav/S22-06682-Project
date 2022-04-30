@@ -8,14 +8,17 @@ from src.utilities import stats  # pylint: disable=import-error
 
 
 def main(args):  # pylint: disable=redefined-outer-name
-    """Displays simple statistics using pandas df.describe()"""
+    """Calls a function that displays simple statistics 
+    using pandas df.describe().
+    
+    file name passed as required arguments."""
     for fname in args.infile:
         stats(fname)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Display simple statistics of inputted datafile(s)."
+        description="Displays simple statistics of inputted datafile(s)."
     )
     parser.add_argument(
         "infile", type=str, nargs="*", default="-", help="Input datafile path(s)"

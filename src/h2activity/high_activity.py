@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """Command that extracts information from the dataset(s)
-for Well(s) with highest H2 activity.
+for well(s) with highest H2 activity.
 
 The highest H2 activity is computed either from
 (a) maximum rate of production of H2 (umolH_max_rate) or
 (b) maximum value of H2 (umolH_max); depending on user's choice.
 
-Required arguments include path to the datafile(s).
-Optional argument include an option that chooses whether they would like
+Required arguments include path to the datafile(s) and an
+argument that allows the user to choose whether they would like
 to extract data based on H2 rate (R) or H2 value (V).
 """
 import argparse
@@ -16,7 +16,7 @@ from src.utilities import max_h2  # pylint: disable=import-error
 
 
 def main(args):  # pylint: disable=redefined-outer-name
-    """Finds Well with highest H2 activity,
+    """Finds well with highest H2 activity,
     extracts corresponding data and
     displays a summarized report."""
     for fname in args.infile:
@@ -25,7 +25,7 @@ def main(args):  # pylint: disable=redefined-outer-name
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Display Summarized Report of Well with High H2 Activity"
+        description="Display summarized report of well with high H2 activity"
     )
     parser.add_argument(
         "infile", type=str, nargs="*", default="-", help="Input datafile path(s)"

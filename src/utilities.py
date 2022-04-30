@@ -1,9 +1,8 @@
-"""A utilities module providing functions to
+"""Module that provides functions to
 (a) read datafile(s) and display its contents,
-(b) output a summarized report of Well with highest H2 activity
-produced by the experiment(s)
-(c) output a simple statistics of the dataframe(s).
-"""
+(b) output a summarized report of well plate experiment(s)
+with highest H2 activity
+(c) output simple statistics of the dataframe(s)."""
 import sys
 import pandas as pd  # pylint: disable=import-error
 
@@ -11,7 +10,7 @@ import pandas as pd  # pylint: disable=import-error
 def display_head(fname, rows):
     """Reads datafile(s) and displays its first n rows."""
     if fname == "-":
-        f_stdin = sys.stdin.read()
+        f_stdin = sys.stdin.read()  # use in piping commands
         data = pd.read_json(f_stdin)
     else:
         data = pd.read_json(fname)
@@ -21,15 +20,15 @@ def display_head(fname, rows):
 
 def max_h2(fname, option):
     """Reads datafile(s) and displays the maximum H2 rates/ values,
-    the corresponding Well, bimetallic composition and its respective
+    the corresponding well number, bimetallic composition and respective
     concentrations."""
     if fname == "-":
-        f_stdin = sys.stdin.read()
+        f_stdin = sys.stdin.read()  # use in piping commands
         data = pd.read_json(f_stdin)
     else:
         data = pd.read_json(fname)
 
-    if option == "R":
+    if option == "R":  # to extract information based on rate
         rate_hy = data["umolH_max_rate"].max()
         high_activity_rate = data.query("umolH_max_rate == @rate_hy")
         print(f"\n   Maximum production rate of H2: {rate_hy} umol/time")
@@ -39,7 +38,7 @@ def max_h2(fname, option):
         for i in list(high_activity_rate.iloc[:, :2]):
             conc = high_activity_rate[i].tolist()
             print(f"   {conc[0]} umol")
-    elif option == "V":
+    elif option == "V":  # to extract information based on value
         value_hy = data["umolH_max"].max()
         high_activity_value = data.query("umolH_max == @value_hy")
         print(f"\n   Maximum value of H2: {value_hy} umol")
@@ -49,10 +48,12 @@ def max_h2(fname, option):
         for i in list(high_activity_value.iloc[:, :2]):
             conc = high_activity_value[i].tolist()
             print(f"   {conc[0]} umol")
+    else:
+        print("\n    INVALID OPTION ENTERED!\n")
 
 
 def stats(fname):
-    """Displays simple statistics of the dataframe(s)."""
+    """Reads datafile(s) and displays simple statistics."""
     if fname == "-":
         f_stdin = sys.stdin.read()
         data = pd.read_json(f_stdin)
